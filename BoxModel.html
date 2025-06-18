@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+     /* div{
+        border: 4px solid;
+        height: 200px;
+        width: 200px;
+        padding :20px;
+        margin: 20px;
+        color:blue
+     } */
+     /* div{
+         background-color: blue;
+         height: 200px;
+         display: inline;  height widthnkam ni krti 
+         display: none;  // remove the element
+         visibility: hidden;  hidden visibility
+         }  */
+     /* span{
+         background-color: chartreuse;
+         height: 100px;
+         width: 200px;
+         display:inline-block;   //in this height width apply
+     } */
+      /* div{
+        height: 100px;
+        width: 100px;
+        display: inline-block;
+      } */
+      /* div:nth-of-type(1){
+        background-color: rgb(254, 110, 211);
+      } */
+      div:nth-of-type(2){
+        background-color: rgb(168, 110, 254);
+        /* position: static   ///this is fixed cannot be change height width top... cannot be apply*/
+        /* position: relative;  ///in relative proprty apply from where the elemnt start */
+        /* position: fixed;     // usi position me rhega but change kr skte h .......ek virtual sreen me jata h.....*/
+        position: absolute; /*parent block se sari proprty apply hogi */
+        left: 12px;
+        top:3px; 
+      }
+      div:nth-of-type(3){
+        background-color: rgb(110, 254, 144);
+      }
+
+      #parent{
+        border: 5px solid red;
+        height: 200px;
+        width: 300px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+      }
+      #child{
+        height: 100px;
+        width: 100px;
+        background-color: yellow;
+        position: absolute;
+        top:30px;
+        left: 2px;
+      }
+</style>
+<body>
+    <!-- <div>
+          hellloo
+    </div>
+    <span>Helloo</span> -->
+    <!-- <div></div>
+    <div></div>
+    <div></div> -->
+<div>
+    <div id="parent">
+        <div id="child"></div>
+    </div>
+    </div>
+</body>
+</html>
