@@ -36,19 +36,19 @@
       /* div:nth-of-type(1){
         background-color: rgb(254, 110, 211);
       } */
-      div:nth-of-type(2){
-        background-color: rgb(168, 110, 254);
+      /* div:nth-of-type(2){ */
+        /* background-color: rgb(168, 110, 254); */
         /* position: static   ///this is fixed cannot be change height width top... cannot be apply*/
         /* position: relative;  ///in relative proprty apply from where the elemnt start */
         /* position: fixed;     // usi position me rhega but change kr skte h .......ek virtual sreen me jata h.....*/
-        position: absolute; /*parent block se sari proprty apply hogi */
-        left: 12px;
-        top:3px; 
-      }
-      div:nth-of-type(3){
+        /* position: absolute; parent block se sari proprty apply hogi 
+         left: 12px; 
+         top:3px;  
+      } */
+      /* div:nth-of-type(3){
         background-color: rgb(110, 254, 144);
-      }
-
+      } */
+/* 
       #parent{
         border: 5px solid red;
         height: 200px;
@@ -65,6 +65,34 @@
         top:30px;
         left: 2px;
       }
+       div{
+        background-color: brown;
+        height: 100px;
+        width: 100px;
+        position: fixed;
+        top:30px;
+        left: 30px;
+       } */
+
+
+        #parent{
+          border: 2px solid black;
+          height: 300px;
+          width: 300px;
+          position: relative;
+          top:200px;
+        }
+
+        #child{
+          background-color: red;
+          height: 100px;
+          width: 100px;
+          position: sticky;
+          top:20px;
+        }
+        #content{
+          height: 1000px;
+        }
 </style>
 <body>
     <!-- <div>
@@ -74,10 +102,19 @@
     <!-- <div></div>
     <div></div>
     <div></div> -->
-<div>
+
+
+    <!-- <div>
     <div id="parent">
         <div id="child"></div>
     </div>
-    </div>
+    </div> -->
+    <!-- <div></div> -->
+  
+    <!-- <div id="parent">
+      <div id="child"></div>
+      <div id="content"></div>
+    </div> -->
+    
 </body>
 </html>

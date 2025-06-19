@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <em>This is emphasized</em>
+    <!-- <em>This is emphasized</em>
     <p><i>Italic font</i></p>
     <b style="background-color: aqua;">This is bold</b>
     <strong>strong text</strong><br/>
@@ -26,6 +26,56 @@
     <mark>hellooo I am highlited</mark>
     <small>i am smalll</small>
     <cite style="background-color: chartreuse;">citeeeee</cite>
-    <q>quatation tag</q>
+    <q>quatation tag</q> -->
+
+    <ul>
+        <li>maggi</li>
+        <li>pasta</li>
+        <li>noodles</li>
+        <li>chinese</li>
+    </ul>
+    <input/>
+
+    <h2>Helloo</h2>
+    <h3>Hello</h3>
+<style>
+    ul li:nth-of-type(3){
+        background-color: yellow
+    } 
+     ul li:first-child{
+        background-color: aqua;
+     } 
+     ul li{
+        transition: 2s;
+     } 
+     ul li:hover{
+        background-color: rgb(145, 78, 208);
+     }
+     input:hover{
+        background-color: burlywood;
+     }
+     input:focus{
+        background-color: aqua;
+     }
+     h2::before{
+        content: "hey!";
+        background-color: chartreuse;
+     }
+     h2::after{
+        content: "byee";
+        background-color: aquamarine;
+     }
+    h3::before{
+        content: "";
+        background-color: chartreuse;
+     }
+     h3::after{
+        content: "";
+        background-color: aquamarine;
+        height: 10px;
+        width: 20px;
+     }
+
+</style>
 </body>
 </html>
