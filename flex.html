@@ -19,23 +19,28 @@
         /* justify-content: center; */
         /* justify-content: space-around; */
         /* justify-content: space-between; */
-        justify-content: space-evenly;
-        flex-wrap: wrap;
+        /* justify-content: space-evenly; */
+        /* flex-wrap: wrap; */
     }
-    #parent div{
+     div{
         height: 100px;
         width: 100px;
-        justify-content: center;
-        align-items: center;
+        display: flex;
+        /* justify-content: space-around;
+        align-items: center;  */
     }
     #one{
         background-color: chartreuse;
+       flex-grow: 2;
     }
     #two{
         background-color: rgb(9, 225, 245);
+       flex-shrink: 5;
+       flex-grow: 4;
     }
     #three{
         background-color: rgb(255, 0, 174);
+        flex-grow: 8;
     }
     
 </style>
