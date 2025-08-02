@@ -10,8 +10,15 @@
 // }
 // console.log(sum);
 
-let i=1;
-while(i<=10){
+// let i=1;
+// while(i<=10){
+//     console.log("abc");
+//     i++;
+// }
+
+let i=20;
+
+do{
     console.log("abc");
     i++;
-}
+}while(i<10);
