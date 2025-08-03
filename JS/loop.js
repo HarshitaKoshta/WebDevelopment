@@ -16,9 +16,15 @@
 //     i++;
 // }
 
-let i=20;
+// let i=20;
 
-do{
-    console.log("abc");
-    i++;
-}while(i<10);
+// do{
+//     console.log("abc");
+//     i++;
+// }while(i<10);
+
+let str = "pihu";
+
+for(let i of str){
+    console.log(i);
+}
