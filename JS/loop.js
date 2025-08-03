@@ -23,8 +23,18 @@
 //     i++;
 // }while(i<10);
 
-let str = "pihu";
+// let str = "pihu";
 
-for(let i of str){
-    console.log(i);
+// for(let i of str){
+//     console.log(i);
+// }
+
+let std={
+     name : "Rahul",
+     age: 20,
+     cgpa :7.9,
+     isPass :true
+};
+for(let i in std){
+    console.log(i,":",std[i]);
 }
