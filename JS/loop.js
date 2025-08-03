@@ -29,12 +29,27 @@
 //     console.log(i);
 // }
 
-let std={
-     name : "Rahul",
-     age: 20,
-     cgpa :7.9,
-     isPass :true
-};
-for(let i in std){
-    console.log(i,":",std[i]);
+// let std={
+//      name : "Rahul",
+//      age: 20,
+//      cgpa :7.9,
+//      isPass :true
+// };
+// for(let i in std){
+//     console.log(i,":",std[i]);
+// }
+
+
+// guess numb game.....
+let guessN = 38;
+
+let userNum = prompt("Guess the game number");
+
+while(userNum!=guessN){
+    if(userNum>guessN)
+      userNum=  prompt("Guess again.....enter smaller num");
+    else 
+      userNum=  prompt("Guess again.....enter greater num");
 }
+console.log("congrats! correct guess");
+
