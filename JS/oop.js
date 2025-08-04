@@ -50,15 +50,27 @@
 
 /* .....for each..... */
 
-let arr = [1,2,3,4,5];
+// let arr = [1,2,3,4,5];
 
-arr.forEach((val,idx,arr)=>{
-    console.log(val,idx,arr);
-});
+// arr.forEach((val,idx,arr)=>{
+//     console.log(val,idx,arr);
+// });
 
 
 let num = [2,4,5,7];
 
-num.forEach((num)=>{
-    console.log("square of",num," is:", num*num);
+// num.forEach((num)=>{
+//     console.log("square of",num," is:", num*num);
+// });
+
+
+/*......map.....*/
+
+num.map((val) => {
+   console.log(val);
 });
+
+let arrMap = num.map((val) => {
+    return val*val;
+});
+console.log(arrMap);
