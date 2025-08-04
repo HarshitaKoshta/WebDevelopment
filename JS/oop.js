@@ -24,26 +24,41 @@
 
 /* practice question count vowel in string */
 
-function strCount(str){
-    let count = 0;
-    for(const char of str){
-        if(char == 'a' || char == 'e' ||char == 'i' ||char == 'o' ||char == 'u'){
-            count++;
-        }
-    }
-    console.log(count);
-}
-strCount("harshitaa");
+// function strCount(str){
+//     let count = 0;
+//     for(const char of str){
+//         if(char == 'a' || char == 'e' ||char == 'i' ||char == 'o' ||char == 'u'){
+//             count++;
+//         }
+//     }
+//     console.log(count);
+// }
+// strCount("harshitaa");
 
 
-const countVow = (str) =>{
-     let count = 0;
-    for(const char of str){
-        if(char == 'a' || char == 'e' ||char == 'i' ||char == 'o' ||char == 'u'){
-            count++;
-        }
-    }
-    console.log(count);
-}
-countVow("harshita");
+// const countVow = (str) =>{
+//      let count = 0;
+//     for(const char of str){
+//         if(char == 'a' || char == 'e' ||char == 'i' ||char == 'o' ||char == 'u'){
+//             count++;
+//         }
+//     }
+//     console.log(count);
+// }
+// countVow("harshita");
 
+
+/* .....for each..... */
+
+let arr = [1,2,3,4,5];
+
+arr.forEach((val,idx,arr)=>{
+    console.log(val,idx,arr);
+});
+
+
+let num = [2,4,5,7];
+
+num.forEach((num)=>{
+    console.log("square of",num," is:", num*num);
+});
