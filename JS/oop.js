@@ -57,7 +57,7 @@
 // });
 
 
-let num = [2,4,5,7];
+// let num = [2,4,5,7];
 
 // num.forEach((num)=>{
 //     console.log("square of",num," is:", num*num);
@@ -66,11 +66,21 @@ let num = [2,4,5,7];
 
 /*......map.....*/
 
-num.map((val) => {
-   console.log(val);
-});
+// num.map((val) => {
+//    console.log(val);
+// });
 
-let arrMap = num.map((val) => {
-    return val*val;
+// let arrMap = num.map((val) => {
+//     return val*val;
+// });
+// console.log(arrMap);
+
+
+/* .....filter..... */
+
+let arr = [32,5,6,8,34,7];
+
+let evenArr = arr.filter((val)=>{
+    return val%2 !== 0;
 });
-console.log(arrMap);
+console.log(evenArr);
