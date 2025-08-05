@@ -80,7 +80,16 @@
 
 let arr = [32,5,6,8,34,7];
 
-let evenArr = arr.filter((val)=>{
-    return val%2 !== 0;
+// let evenArr = arr.filter((val)=>{
+//     return val%2 !== 0;
+// });
+// console.log(evenArr);
+
+/* ....reduce.... */
+
+const op = arr.reduce((res,curr)=>{
+    // return res+curr;
+    return res > curr ? res : curr;
 });
-console.log(evenArr);
+
+console.log(op);
