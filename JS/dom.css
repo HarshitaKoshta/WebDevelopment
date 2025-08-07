@@ -6,3 +6,9 @@
     background-color: blueviolet;
     color: rgb(236, 214, 65);
 }
+.box{
+    height: 100px;
+    width: 100px;
+    margin: 5px;
+    border: 2px solid rgb(175, 49, 70);
+}
