@@ -6,11 +6,16 @@
 // console.dir(headings);
 // console.log(headings);
 
-let parahs = document.getElementsByTagName("p");
-console.dir(parahs);
+// let parahs = document.getElementsByTagName("p");
+// console.dir(parahs);9
 
-let firstEle = document.querySelector("p");
-console.dir(firstEle);
+// let firstEle = document.querySelector("p");
+// console.dir(firstEle);
 
-let allEle = document.querySelectorAll("p");
-console.dir(allEle);
+// let allEle = document.querySelectorAll("p");
+// console.dir(allEle);
+
+let h2 = document.querySelector("h2");
+console.dir(h2.innerText);
+h2.innerText = h2.innerText + "from Harshita";
+console.log(h2.innerText)
