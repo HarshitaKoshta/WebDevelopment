@@ -28,4 +28,5 @@ for(div of divs){
     // console.log(div.innerText);
     div.innerText = `new unique value ${idx}`;
     idx++;
+    
 }
