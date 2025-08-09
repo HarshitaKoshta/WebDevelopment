@@ -35,4 +35,6 @@
 // console.log(para.getAttribute("class"));/
 // console.log(para.setAttribute("class","newClass"));
 
-let div = document.querySelectorAll("div");
+let div = document.querySelector("div");
+div.style.backgroundColor = "pink";
+div.style.fontSize = "26px";
