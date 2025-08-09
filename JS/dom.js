@@ -31,6 +31,8 @@
     
 // }
 
-let para = document.querySelector("p");
+// let para = document.querySelector("p");
 // console.log(para.getAttribute("class"));/
-console.log(para.setAttribute("class","newClass"));
+// console.log(para.setAttribute("class","newClass"));
+
+let div = document.querySelectorAll("div");
