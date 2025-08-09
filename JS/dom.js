@@ -20,13 +20,17 @@
 // h2.innerText = h2.innerText + "from Harshita";
 // console.log(h2.innerText)
 
-let divs = document.querySelectorAll(".box");
-console.log(divs[0]);
+// let divs = document.querySelectorAll(".box");
+// console.log(divs[0]);
 
-let idx = 1;
-for(div of divs){
-    // console.log(div.innerText);
-    div.innerText = `new unique value ${idx}`;
-    idx++;
+// let idx = 1;
+// for(div of divs){
+//     // console.log(div.innerText);
+//     div.innerText = `new unique value ${idx}`;
+//     idx++;
     
-}
+// }
+
+let para = document.querySelector("p");
+// console.log(para.getAttribute("class"));/
+console.log(para.setAttribute("class","newClass"));
