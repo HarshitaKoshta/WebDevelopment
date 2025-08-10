@@ -35,6 +35,13 @@
 // console.log(para.getAttribute("class"));/
 // console.log(para.setAttribute("class","newClass"));
 
+// let div = document.querySelector("div");
+// div.style.backgroundColor = "pink";
+// div.style.fontSize = "26px";
+
+let newBtn = document.createElement("button");
+newBtn.innerText = "click me!";
+console.log(newBtn);
+
 let div = document.querySelector("div");
-div.style.backgroundColor = "pink";
-div.style.fontSize = "26px";
+div.append(newBtn);
