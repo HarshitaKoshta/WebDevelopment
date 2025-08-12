@@ -39,15 +39,23 @@
 // div.style.backgroundColor = "pink";
 // div.style.fontSize = "26px";
 
-let newBtn = document.createElement("button");
-newBtn.innerText = "click me!";
-console.log(newBtn);
+// let newBtn = document.createElement("button");
+// newBtn.innerText = "click me!";
+// console.log(newBtn);
 
-let div = document.querySelector("div");
+// let div = document.querySelector("div");
 // div.append(newBtn);
 
 // div.prepend(newBtn);
 // div.before(newBtn);
-div.after(newBtn);
+// div.after(newBtn);
 
+
+let nBtn = document.createElement("button");
+nBtn.innerText = "click me!";
+
+nBtn.style.color = "white";
+nBtn.style.backgroundColor = "red";
+
+document.querySelector("body").prepend(nBtn);
 
