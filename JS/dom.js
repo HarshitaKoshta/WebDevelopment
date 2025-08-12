@@ -51,11 +51,15 @@
 // div.after(newBtn);
 
 
-let nBtn = document.createElement("button");
-nBtn.innerText = "click me!";
+// let nBtn = document.createElement("button");
+// nBtn.innerText = "click me!";
 
-nBtn.style.color = "white";
-nBtn.style.backgroundColor = "red";
+// nBtn.style.color = "white";
+// nBtn.style.backgroundColor = "red";
 
-document.querySelector("body").prepend(nBtn);
+// document.querySelector("body").prepend(nBtn);
 
+//Q2
+let para = document.querySelector("p");
+// para.setAttribute("class","newClass"); //change the class
+para.classList.add("newClass"); ////overwrite in already existing...

@@ -1,4 +1,4 @@
-#heading1{
+/* #heading1{
     background-color: aqua;
     color: blue;
 }
@@ -11,4 +11,13 @@
     width: 100px;
     margin: 5px;
     border: 2px solid rgb(175, 49, 70);
+} */
+
+
+.content{
+    color: blueviolet;
+}
+.newClass{
+    background-color: green
+    ;
 }
