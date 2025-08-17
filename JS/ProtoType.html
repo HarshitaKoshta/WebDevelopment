@@ -7,27 +7,35 @@
 </head>
 <body>
     <script>
+        // const emp = {
+        //     calTax() {
+        //         console.log("tax is 10%");
+        //     },
+        // };
+        // const Karan = {
+        //     salary : 40000,
+        //     calTax(){
+        //        console.log("tax is 15%");
+        //     }
+        // };
+        // const Karan1 = {
+        //     salary : 30000,
+        // };
+        // Karan.__proto__ = emp;
+        // Karan1.__proto__ = emp;
 
-        const emp = {
-            calTax() {
-                console.log("tax is 10%");
-            },
-        };
-        const Karan = {
-            salary : 40000,
-            calTax(){
-               console.log("tax is 15%");
+        class ToyotaCar{
+            start() {
+                console.log("start");
             }
-        };
-        const Karan1 = {
-            salary : 30000,
-        };
-        const Karan2 = {
-            salary : 20000,
-        };
-        Karan.__proto__ = emp;
-        Karan1.__proto__ = emp;
-        Karan2.__proto__ = emp;
+            stop() {
+                console.log("stop");
+            }
+            setBrand(brand){
+                this.brand = brand;
+            }
+        }
+        let fortuner = new ToyotaCar();
 
     </script>
 </body>
