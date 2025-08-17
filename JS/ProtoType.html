@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const emp = {
+            calTax() {
+                console.log("tax is 10%");
+            },
+        };
+        const Karan = {
+            salary : 40000,
+            calTax(){
+               console.log("tax is 15%");
+            }
+        };
+        const Karan1 = {
+            salary : 30000,
+        };
+        const Karan2 = {
+            salary : 20000,
+        };
+        Karan.__proto__ = emp;
+        Karan1.__proto__ = emp;
+        Karan2.__proto__ = emp;
+
+    </script>
+</body>
+</html>
