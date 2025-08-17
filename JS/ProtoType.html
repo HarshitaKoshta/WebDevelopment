@@ -25,17 +25,22 @@
         // Karan1.__proto__ = emp;
 
         class ToyotaCar{
+            constructor(brand){
+                console.log("creating new object");
+                this.brand = brand;
+                console.log(brand);
+            }
             start() {
                 console.log("start");
             }
             stop() {
                 console.log("stop");
             }
-            setBrand(brand){
-                this.brand = brand;
-            }
+            // setBrand(brand){
+            //     this.brand = brand;
+            // }
         }
-        let fortuner = new ToyotaCar();
+        let fortuner = new ToyotaCar("brand : Fortuner");
 
     </script>
 </body>
