@@ -1,0 +1,58 @@
+img{
+    height : 550px;
+    width: 1550px;
+    display: flex;
+    justify-content: center;
+    opacity: 0.9;
+    
+}
+
+#container{
+    position: relative;
+   display: flex;
+}
+
+h1{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 100px;
+    margin-top: 210px;
+    margin-left: 580px;
+}
+#add{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: 880px;
+    font-size: 20px;
+}
+.log{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: 1080px;
+    font-size: 20px;
+}
+.sign{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+    margin-left: 1200px;
+    font-size: 20px;
+}
+.p1{
+    position: absolute;
+    color: white;
+    margin-top: 319px;
+    font-size: 40px;
+    margin-left: 470px;
+     
+}
+#p2{
+  position: absolute;
+    color: white;
+    margin-top: 360px;
+    font-size: 40px;
+    margin-left: 550px;
+    max-width: 510px;  
+}
