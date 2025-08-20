@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #content{
+        height: 1500px;
+        display: grid;
+        grid-template-rows: repeat(6,1fr) ;
+        grid-template-columns: repeat(4,1fr);
+        gap: 6px;
+    }
+    #one{
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+    
+    #two{
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+    #three {
+        grid-row: span 5;  
+    }
+    #four {
+        grid-row: span 2;
+    }
+    #five {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+    #six {
+        grid-row: span 3;
+    }
+    .im :hover{
+        transform: scale(1.3);
+        transition: 1s;
+    }
+    .im{
+        overflow: hidden;
+    }
+    img{
+        height: 100%;
+        width: 100%;
+    }
+    .text{
+        
+    }
+</style>
+<body>
+    <div id="content">
+          <div id="one" class="im"><img src="p3.avif" class="text" alt="">people</div>
+          <div id="two" class="im"><img src="p4.avif" class="text" alt=""></div>
+          <div id="three" class="im"><img src="p1.avif" class="text" alt=""></div>
+          <div id="four" class="im"><img src="p5.avif" class="text" alt=""></div>
+          <div id="five" class="im"><img src="p2.avif" class="text" alt=""></div>
+          <div id="six" class="im"><img src="p6.avif" class="text" alt=""></div>
+    </div>
+</body>
+</html>
