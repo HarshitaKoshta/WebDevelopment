@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background:linear-gradient(rgb(218, 7, 116),rgb(238, 0, 255),rgb(255, 0, 115),rgb(241, 104, 66));
+    }
+    #parent{
+       display: flex;
+       flex-wrap: wrap;
+       gap:15px;
+    }
+    #box{
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        background:linear-gradient(to right ,red,yellow);
+    }
+    #box2 {
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        background: repeating-linear-gradient(45deg,
+        red,
+        rgb(0, 255, 106) 10px,
+        rgb(179, 0, 255) 10px,
+        yellow 20px
+        );
+    }
+    #box3 {
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        background: repeating-radial-gradient(circle,
+        rgb(208, 255, 0),
+        rgb(16, 39, 209) 10px,
+        rgb(0, 238, 255) 10px,
+        rgb(255, 0, 0) 20px
+        );
+    }
+    #box4{
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        background:radial-gradient(rgb(195, 0, 255),rgb(7, 177, 215),rgb(9, 255, 0));
+    }
+    #box5{
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        background: radial-gradient(circle at top left ,rgb(58, 5, 73),rgb(146, 15, 253),rgb(254, 38, 197),rgb(96, 3, 86));
+    }
+    #box6{
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        background: radial-gradient(ellipse at center,rgb(221, 8, 232),rgb(18, 82, 210),rgb(3, 52, 108),rgb(96, 3, 86));
+    }
+    #box7{
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        background: conic-gradient(rgb(255, 234, 0),rgb(244, 67, 96),rgb(7, 177, 215),rgb(255, 111, 0));
+    }
+    #box8 {
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        background: repeating-conic-gradient(
+        red 0deg ,
+        rgb(9, 246, 9) 20deg,
+        blue 20deg ,
+        rgb(0, 255, 242) 40deg
+        );
+    }
+    #box9{
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        background: radial-gradient(ellipse at left ,rgb(86, 7, 91),rgb(198, 3, 156),rgb(210, 19, 67),rgb(93, 0, 14));
+    }
+    #box10{
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        background: conic-gradient(at top,rgb(0, 153, 255),rgb(11, 73, 216),rgb(249, 10, 225),rgb(0, 255, 213));
+    }
+     #box11 {
+        height: 200px;
+        width: 200px;
+        border: 2px solid;
+        background: repeating-radial-gradient(circle at top,
+        rgb(0, 255, 13),
+        rgb(209, 199, 16) 10px,
+        rgb(6, 189, 255) 10px,
+        rgb(255, 0, 102) 20px
+        );
+    }
+</style>
+<body>
+    <div id="parent">
+    <div id="box"></div>
+    <div id="box2"></div>
+    <div id="box3"></div>
+    <div id="box4"></div>
+    <div id="box5"></div>
+    <div id="box6"></div>
+    <div id="box7"></div>
+    <div id="box8"></div>
+    <div id="box9"></div>
+    <div id="box10"></div>
+    <div id="box11"></div>
+    </div>
+</body>
+</html>
