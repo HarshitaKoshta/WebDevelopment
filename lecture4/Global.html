@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #con{
+        position: relative;
+    }
+    #img img{
+        height: 780px;
+        width: 1500px;
+        position: absolute;
+    }
+    #form{
+        height: 350px;
+        width: 400px;
+        position: absolute;
+        background-color: white;
+        margin: 180px;
+        margin-left: 570px;
+    }
+    #form img{
+        height: 100px;
+        width:400px;
+    }
+    .text{
+        margin-top: 20px;
+        margin-left: 16px;
+        border: none;
+        outline: none;
+        border-bottom: 2px solid rgb(12, 110, 247);
+        width: 80%;
+    }
+    .text:focus{
+        border: none;
+        font-size: 15px;
+        border-bottom: 2px solid rgb(0, 51, 255);
+    }
+    .box{
+        margin-left: 15px;
+    }
+    button{
+        height: 30px;
+        width: 330px;
+        background-color: rgb(36, 102, 255);
+        color: azure;
+        border: none;
+        margin-left: 30px;
+        border-radius: 10px;
+    }
+    
+</style>
+<body>
+     <div id="con">
+        <div id="img"> <img src="global.avif" alt=""> </div>
+        <div id="form">
+            <img src="https://raw.githubusercontent.com/gncsgi/.github/main/global.jpg" alt="">
+            <input class="text" type="text" placeholder="Username or phone number" class="input">
+            <br>
+            <br>
+            <input class="text" type="password" placeholder="password" class="input">
+            <br>
+            <br>
+            <br>
+            <label><input class="box" type="checkbox" >Remember me</label>
+            <br>
+            <br>
+            <br>
+            <button>Log In</button>
+        </div>
+     </div>
+    
+</body>
+</html>
