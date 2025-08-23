@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;    
+    align-items: center;        
+    background:white;
+}
+    #Bbox{
+        height: 450px;
+        width:340px;
+        background-color: white; 
+        border-radius: 20px;
+        position: relative;
+        border: 2px solid blue;
+    }
+    #inBox{
+        background:linear-gradient(rgb(61, 9, 109) ,rgb(59, 30, 222),rgb(8, 11, 207),rgb(3, 2, 71));
+        height: 160px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+
+    }
+    ul {
+    display: flex;
+    gap:5px;
+    color: gray;
+   
+  }
+  
+  #l2{
+    margin-left: 20px;
+  }
+  #l3{
+    margin-left: 20px;
+  }
+   h2{
+      color: rgb(8, 34, 56);
+      margin-left: 27px;
+    }
+    #new{
+        background-color: rgb(227, 242, 242);
+        font-weight: 550;
+        margin: 16px;
+        border-radius: 20px;
+        border: none;
+        height: 30px;
+        width: 50px;
+    }
+    #rec{
+        display: flex;
+        gap:20px;
+        margin-left: 30px;
+        /* height: 20px; */
+    }
+    .d1{
+        color: rgb(46, 46, 46);
+        font-size: 14px;
+       
+    }
+    p{
+        text-align: center
+    }
+    #rs{
+       color: rgb(15, 10, 160);
+       font-size: 20px;
+       display: flex;
+       justify-content: space-around;
+      
+       margin-top: 20px;
+    }
+    #res{
+        height: 20px;
+        width: 75px;
+        text-align: center;    
+    }
+    #css{
+        height: 19px;
+        width: 70px;
+        text-align: center;    
+    }
+    #mod{
+        height: 19px;
+        width: 60px;
+        text-align: center;    
+    }
+    #get{
+         background: linear-gradient(rgb(6, 56, 220) ,rgb(104, 88, 251));
+         border-radius: 20px ;
+         height: 30px;
+         color: aliceblue;
+         font-size: 16px;
+         border: none;        
+    }
+    #bod{
+        position: absolute;
+        border: 2px solid rgb(23, 37, 193);
+        height: 450px;
+        width:340px;
+        border-radius: 20px;
+       
+       animation: spin 3s linear infinite;;
+    }
+    @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+</style>
+<body>
+    <div id="Bbox">
+            <div id="bod"></div>
+            <div id="inBox">
+                <button id="new">NEW</button>
+            </div>
+            <div>
+                <h2 >Pro UI Components</h2>
+                <ul>
+                    <li id="l1">Glass</li>
+                    <li id="l2">Gradient</li>
+                    <li id="l3">Simple motion</li>
+                </ul>
+                <div id="rec">
+                    <div class="d1" id="res" >Responsive</div>
+                    <div class="d1" id="css">Pure CSS</div>
+                    <div class="d1" id="mod">Modem</div>
+                </div> 
+                   <div> <p style="color: rgb(102, 100, 100);">Ek clean, elegant card jo premium feel deta hai. Gradient border, glass panel aur hover hone <br> par soft lift — sab kuch simple CSS ke saath.</p>
+           </div>
+            <div id="rs"><b>₹999</b>
+             <button id="get">Get Now</button></div>
+            
+        </div>           
+    </div>
+</body>
+</html>
