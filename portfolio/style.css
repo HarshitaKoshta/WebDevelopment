@@ -1,0 +1,415 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    background:radial-gradient(rgb(1, 1, 38),rgb(0, 0, 28),rgb(1, 0, 8),rgb(1, 1, 64));
+}
+#nav{
+    height: 90px;
+    background:radial-gradient(rgb(0, 2, 27),rgb(0, 0, 26),rgb(0, 3, 30));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    font-size: 25px;
+    }
+#menu{
+    margin-left: 250px;
+   display: flex;
+   text-align: center;
+   gap:30px;
+   width: 650px;
+}
+#menu .p1:hover{
+    color: rgb(244, 239, 239);
+    background-color: rgb(0, 0, 57);
+}
+#n{
+    margin-top: 29px;
+    margin-left: 50px;
+    margin-right: 20px;
+}
+#connect{
+    margin-right: 60px;
+    color: aliceblue;
+    border: none;
+    height: 43px;
+    width: 95px;
+    background: linear-gradient(rgb(255, 213, 0),rgb(255, 128, 0));
+    border-radius: 30px;
+   box-shadow: rgba(235, 187, 41, 0.77) 0px 10px 30px -3px;
+}
+#connect:hover{
+    color: rgb(255, 140, 0);
+    background-color: aliceblue;
+    font-size: 15px;
+   background: white;
+    border:2px solid #ffb300;
+}
+#name{
+    display: flex;
+}
+#fname{
+    color: rgb(255, 208, 0);
+    font-size: 55px;
+}
+#fname:hover{
+    color: #ffb300;
+}
+#body{
+    margin-top: 120px;
+    margin-left: 100px;
+    display: flex;
+    gap:200px;
+    position: relative;
+}
+#hy{
+    color: aliceblue;
+    font-size: 50px;
+}
+#about{
+    color: rgb(147, 143, 143);
+}
+.hire{
+    background: linear-gradient(rgb(255, 213, 0),rgb(255, 128, 0));
+    color: aliceblue;
+    border: none;
+    font-size: 16px;
+    height: 40px;
+    width: 90px;
+   border-radius: 20px;
+   box-shadow: rgb(253, 194, 18) 0px 10px 30px -7px;
+}
+.hire:hover {
+   color: rgb(255, 179, 0);
+   background: white;
+    border: 2px solid #ffb300;
+
+}
+#img{
+    margin-left: 140px;
+    height: 380px;
+    width: 380px;
+    border-radius: 50%;
+    position: absolute;
+}
+#linkedin{    
+    background-color: rgb(255, 200, 0);
+    border-radius: 50%;
+    height: 50px;
+    margin-left: 30px;
+}
+#linkedin:hover{
+    background-color: rgb(255, 255, 255);
+}
+#insta{
+    background-color: rgb(255, 200, 0);
+    border-radius: 50%;
+    height: 50px;
+    margin-left: 30px;
+}
+#insta:hover{
+    background-color: rgb(255, 255, 255);
+}
+#git{
+    background-color: rgb(255, 200, 0);
+    border-radius: 50%;
+    height: 50px;
+}
+#git:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+#web{
+   margin-left: 40px;
+   margin-top: 350px;
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 15px;
+   font-size: 17px;
+   height: 50px;
+   width: 140px;
+   background-color: aliceblue;
+}
+#web:hover{
+    font-size: 17.5px;
+    background-color: rgb(248, 249, 250);
+}
+#hy {
+       white-space: nowrap;
+       overflow: hidden;
+       border-right: 3px solid #fff; /* cursor  */
+       animation: typing 1.5s steps(10,end ) forwards, 0.7s infinite;
+    }
+@keyframes typing {
+      from { width: 0; }
+      to { width: 8ch; } /* length of text  */
+    }
+#awsm{
+    margin-top: 200px;
+    height: 900px;
+    display: flex;
+    gap:200px;
+    position: relative;
+}
+#awsmL{
+    margin-top: 220px;
+    margin-left: 100px;
+}
+#myawsm{
+     color: #fff;
+     font-size: 50px;
+}
+#service{
+    color: #ffb300;
+    font-size: 50px;
+}
+.lorem{
+    color: rgb(160, 168, 168);
+}
+#Download{
+    background: linear-gradient(rgb(255, 213, 0),rgb(255, 128, 0));
+    color: aliceblue;
+    border: none;
+    font-size: 16px;
+    height: 40px;
+    width: 120px;
+   border-radius: 20px;
+   box-shadow: rgb(253, 194, 18) 0px 10px 30px -7px;
+}
+#Downlaod:hover {
+   color: rgb(255, 179, 0);
+   background: white;
+    border: 2px solid #ffb300;
+
+}
+#awsmR{
+    display: flex;
+    margin: 10px;
+}
+.card{
+    border-radius: 10px;
+    /* background-color: #fff; */
+    background: radial-gradient(white,rgb(255, 255, 248),rgb(210, 236, 242),rgb(186, 232, 248),rgb(180, 211, 251));
+    height: 280px;
+    width: 220px;
+    /* margin: 10px; */
+    /* margin-top: 300px; */
+}
+.card p{
+    color: rgb(133, 135, 136);
+}
+.emoji{
+    height: 60px;
+    /* margin: 20px; */
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.para{
+    margin-left: 20px;
+    height: 100px;
+    width: 175px;
+    text-align: center;
+}
+.dis{
+    margin-top: 32px;
+    margin-bottom: 12px;
+    /* margin-left: 50px; */
+    text-align: center;
+}
+#c1{
+    margin-top: 100px;
+}
+#c2{
+    margin-top: 300px;
+}
+#c3{
+    margin-top: 100px;
+}
+#awsm:hover #c1{
+    animation: moveBox 1.5s ease-in-out forwards;
+}
+@keyframes moveBox {
+          0%   { transform: translate(0, 0); }  
+          50%{ transform: translateX(100px);}       
+          100% { transform: translate(-200px, -100px); }
+}
+#awsm:hover #c2{
+    animation: moveBox2 1.5s ease-in-out forwards;
+}
+@keyframes moveBox2 {
+          0%   { transform: translate(0, 0); }    
+          50%{ transform: translateY(-80px);}       
+          100% { transform: translate(-200px, 50px); }
+}
+#awsm:hover #c3{
+    animation: moveBox3 1.5s ease-in-out forwards;
+}
+@keyframes moveBox3 {
+          0%   { transform: translate(0, 0); }  
+          50%{ transform: translateX(-200px);}       
+
+          100% { transform: translate(-160px, -100px); }
+}
+
+.inimg{
+    height: 100px;
+    /* width: 100px; */
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    border: 5px solid rgb(223, 212, 212);
+}
+#circle{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+#work{
+    /* margin-top: 100px; */
+    display: flex;
+}
+#text{
+    margin-top: 150px;
+   width: 600px;
+   margin-left: 80px;
+}
+#want{
+    color: #fff;
+    font-size: 50px;
+}
+#brand{
+    color: rgb(255, 208, 0);
+    font-size: 55px;
+}
+#brand:hover{
+    color: #ffb300;
+}
+#logo{
+    position: relative;
+    margin-left: 200px;
+    height: 800px;
+}
+#google{
+   margin-left: 180px;
+}
+#amazon{
+    margin-top: 190px;
+   margin-left: 180px;
+}
+#up{
+    margin-top: 360px;
+   margin-left: 180px;
+}
+#fb{
+    margin-top: 190px;
+    margin-left:380px ;
+}
+#shop{
+    margin-top: 190px;
+}
+#work:hover #fb{
+    animation: face 1.5s ease-in-out forwards;
+}
+@keyframes face {
+          0%   { transform: translate(0, 0); }  
+         100% { transform: translateX(-390px);}                
+}
+#work:hover #shop{
+    animation: shopy 1.5s ease-in-out forwards;
+}
+@keyframes shopy {
+          0%   { transform: translate(0, 0); }  
+         100% { transform: translateX(390px);}                
+}
+#work:hover #up{
+    animation: upp 1.5s ease-in-out forwards;
+}
+@keyframes upp {
+          0%   { transform: translate(0, 0); }  
+         100% { transform: translateY(-380px);}                
+}
+#work:hover #google{
+    animation: goog  1.5s ease-in-out forwards;
+}
+@keyframes goog {
+          0%   { transform: translate(0, 0); }  
+         100% { transform: translateY(380px);}                
+}
+#pro{
+    font-size: 50px;
+    color: #fff;
+    margin-left: 600px;
+}
+#port{
+    font-size: 50px;
+    color: #fcbf08;
+    margin-left: 660px;
+}
+#Village{
+    height: 300px;
+    width: 250px;
+    background: radial-gradient(rgb(5, 5, 110),rgb(1, 1, 56),black);
+    color: #fff;
+    border-left: 2px solid rgb(245, 245, 245);
+    border-top: 2px solid rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(245, 245, 245);
+    border-radius: 10px;
+}
+#github{
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    background: radial-gradient(rgb(5, 5, 110),rgb(1, 1, 56),black);
+    color: #fff;
+    border-left: 2px solid rgb(245, 245, 245);
+    border-top: 2px solid rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(245, 245, 245);
+}
+#cardT{
+    height: 300px;
+    width: 250px;
+    background: radial-gradient(rgb(5, 5, 110),rgb(1, 1, 56),black);
+    color: #fff;
+    border-left: 2px solid rgb(245, 245, 245);
+    border-top: 2px solid rgb(245, 245, 245);
+    border-bottom: 1px solid rgb(245, 245, 245);
+    border-radius: 10px;
+}
+#view{
+    margin-top: 150px;
+    margin-left: 250px;
+    display: flex;
+    gap:130px;
+    height: 600px;
+}
+.vill{
+    /* margin-top: 10px; */
+     text-align: center;
+}
+#Vweb{
+    margin: 100px;
+    height: 50px;
+    width: 70px;
+    border-radius: 20px;
+    border-left: 2px solid rgb(255, 0, 0);
+    border-bottom: 1px solid rgb(240, 80, 6);
+    background: linear-gradient(rgb(255, 200, 0),orange,rgb(255, 132, 0));
+   box-shadow: rgb(253, 194, 18) 0px 10px 30px -7px;
+
+}
+.parag{
+    height: 35px;
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 150px;
+    font-size: 17px;
+}
