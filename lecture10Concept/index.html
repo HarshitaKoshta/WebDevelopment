@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // let a = 5
+    // function sum(){
+    //     a += 5
+    //     return a
+    // }
+    // console.log(sum());
+    // console.log(sum());
+
+    // console.log(a);
+    // let a =5                   ===============>>>>>>> reference error
+    
+    // console.log(a);
+    // var a = 5;                 =============>>>>>>> undefine
+
+    // sum()
+    // function sum(){
+    //     console.log("hello");  =============>>>>>>>>>> hello
+    // }
+    
+    // sum()
+    // let sum=()=>{
+    //     console.log("hello");  ===============>>>>>>>> cannot access sum
+    // }
+
+    // sum()
+    // var sum=()=>{
+    //     console.log("hello");   ===============>>>>>>>> sum is not a function
+    // }
+      
+    ///==================>>>>>>>> let or constant cannot access outside the block
+
+    // let a = 10
+    // {
+    //     let a =30
+    // }
+    // console.log(a);
+
+    // let a = 10
+    // {
+    //     let a =30
+    //     console.log(a); ====>> 30
+    // }
+    // console.log(a);  ====>>10
+    
+    //    var a = 10
+    // {
+    //    var a =30
+    // }
+    // console.log(a); ===>> 30
+ 
+    // let a =10;
+    // function sum(){
+    //     a =9;
+    //     console.log(a);    
+    // }
+    // console.log(a);
+    // sum();
+
+    /// unshift add in front of array
+    /// shift pop in front of array
+    // let arr = [1,4,4,643,5,2,5,6]
+    // arr.push(35)
+    // arr.pop()
+    // arr.unshift(26)
+    // // arr.shift()
+    // console.log(arr);
+
+
+    // *******HOF******higher order function********HOF********
+    // function outer(){
+    //     function inner(){
+    //         console.log("hello");
+    //     }
+    //     return inner
+    // }
+    // let a = outer()
+    // a() 
+
+    // function outer(a){
+    //     a()
+    // }
+    // function inner(){
+    //    console.log("helloo");
+    // }
+    // outer(inner)
+
+    // console.log(typeof(typeof(true)));
+
+    let arr = [1,2,"heelllo","hii",true]
+    let arr1 =[] , arr2=[] ,arr3=[]
+    for(let i =0;i<arr.length;i++){
+        if(typeof(arr[i]) === "Number"){
+            arr1.push(arr[i])
+        }else if(typeof(arr[i]) === "Boolean"){
+            arr2.push(arr[i])
+        }else
+            arr3.push(arr[i])
+    }
+    console.log(arr1)
+    console.log(arr2)
+    console.log(arr3)
+
+    
+</script>
+<body>
+    
+</body>
+</html>
