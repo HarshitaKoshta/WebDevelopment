@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    // console.log(window);  ==> it is a global object
+
+    // let obj={
+    //     id : 1,
+    //     name : "harshita",
+    //   sum:function(){
+    //        console.log(this);
+    //        console.log(this.name);      
+    //   }
+    // }
+    // obj.sum()
+
+
+    // a = 5
+    // let obj={
+    //     a:10,
+    //     sum:function(){
+    //         console.log(this.a);  //  =====>output : 10
+            
+    //     }
+    // }
+    // a=5
+    // console.log(a);
+    
+
+    // obj.sum()
+
+    // a = 5
+    // let ob={
+    //     a:10,
+    //     sum:()=>{
+    //         console.log(this.a);   // =====>output : 5
+            
+    //     }
+    // }
+    // ob.sum()
+
+    // we can make our map function by changing the prototype
+
+    let arr = [1,2,3,4]
+
+    Array.prototype.MyMap = function(callback){
+        let res = []
+        for(let i=0;i<this.length;i++){
+            // res.push(callback(this[i],i)) ===>> map
+            if(callback(this[i],i,this)){
+             res.push(this[i]) // ===>> filter
+            }
+        }
+        return res
+    }
+
+    let data = arr.MyMap((a,b,c)=>{
+        return a>2
+    })
+    console.log(data);
+    
+</script>
+<body>
+    
+</body>
+</html>
