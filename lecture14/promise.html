@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+
+    // let prom = new Promise((resol,rej)=>{
+    //     // resol();
+    //     rej();
+    // })
+    // prom.then(()=>{
+    //     console.log("helloo"); ///if resolve   
+    // }).catch(()=>{
+    //     console.log("bye"); ///iif reject
+    // })
+    // console.log(prom);
+
+    let step1 = function(){
+        return new Promise((res,rej)=>{
+            setTimeout(()=>{
+            res()
+            console.log("photo selected"); 
+        },3000)
+    })
+}
+    let step2 = function(){
+        return new Promise((res,rej)=>{
+            setTimeout(()=>{         
+            res()
+            console.log("caption"); 
+        },2000)
+    })
+}
+    
+    step1().then(()=>{
+        return step2().then(()=>{
+        }) ///promise
+    })
+
+    // async function call() {
+    //     await step1()
+    //     await step2()
+    // }
+    // call()
+
+
+
+</script>
+<body>
+    
+</body>
+</html>
