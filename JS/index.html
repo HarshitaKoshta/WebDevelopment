@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = [2,43,9,6,32,412,3]
+        function even(){
+           return arr.filter(a=>a%2==0)
+        }
+       console.log(even())
+       function evenSum(){
+           return arr.filter(a=>a%2==0).reduce((a,b)=>a+b,0)
+        }
+       console.log(evenSum())
+
+       function double(){
+        return arr.map(a=>a*2)
+       }
+       console.log(double());
+       
+       function totalSum(){
+        return arr.reduce((a,b)=>a+b,0)
+       }
+       console.log(totalSum());
+       
+       function findGtr(){
+        return arr.filter(a=>a>5)
+       }
+       console.log(findGtr());
+
+    </script>
+</body>
+</html>
