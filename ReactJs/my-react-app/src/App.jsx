@@ -2,6 +2,7 @@
 import React, {useEffect, useState} from 'react'
 import Time from './Time';
 import ShowImg from './ShowImg';
+import TodoApp from './ToDo';
 
 
 
@@ -9,7 +10,8 @@ const App = () => {
   return (
     <div>
        {/* <Time/> */}
-       <ShowImg/>
+       {/* <ShowImg/> */}
+       <TodoApp/>
     </div>
   )
 }
