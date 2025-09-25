@@ -1,4 +1,4 @@
-div{
+/* div{
   background-color: rgb(255, 0, 128);
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -12,4 +12,19 @@ p{
 }
 h2{
   background:linear-gradient(blue,rgb(0, 255, 255),rgb(6, 24, 106),rgb(0, 140, 255))
+} */
+
+#card{
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  margin: 15px;
+}
+#card img{
+  height: 100%;
+  width: 100%;
+}
+
+button{
+  background-color: rgb(255, 0, 76);
 }

@@ -1,14 +1,40 @@
-import React from 'react'
+
+import React, { useEffect, useState } from 'react'
+
 
 const ShowImg = () => {
+  let [apiData,SetData] = useState([])
 
+  useEffect(()=>{
+    fetch("https://dummyjson.com/recipes").then((res)=>{
+      return res.json()
+    }).then((data)=>{
+      console.log(data);
+      SetData(data.recipes)
+    })
+  },[])
+  function dlt(idx){
+      let ImagesA = apiData.filter((a,b)=>{
+            return b!=idx;
+         })
+         SetData(ImagesA)
+     }
   return (
-    <div>
-        <h1>My Img</h1>
-        <img src="https://media1.thrillophilia.com/filestore/uwpz857lua13qmvub6um2v93dlrm_IMG%20Worlds%20%20of%20Adventure.jpg" alt="" width="300"/>
-        <ul>
-            <li>Image</li>
-        </ul>
+    <div>{
+       apiData.map((a,idx)=>{
+        return(
+          <>
+          <div id="card">
+            <img src={a.image} />
+            <p>{a.name}</p>
+            <button  onClick={(()=>{dlt(idx) })}>Delete</button>
+            <button>SAVE</button>
+          </div>
+          </>
+        )
+       })
+
+      }
     </div>
   )
 }
