@@ -18,13 +18,21 @@ h2{
   display: inline-block;
   height: 250px;
   width: 250px;
-  margin: 15px;
+  margin: 25px;
 }
 #card img{
+  border-radius: 20px;
   height: 100%;
   width: 100%;
 }
 
 button{
   background-color: rgb(255, 0, 76);
+}
+
+.sort{
+  margin-top: 20px;
+  margin-left: 130px;
+  background-color: rgb(128, 3, 113);
+  
 }
