@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react'
 
 const ShowImg = () => {
   let [apiData,SetData] = useState([])
+  let [filteredddData,SetFilteredddData]= useState([])
 
   useEffect(()=>{
     fetch("https://dummyjson.com/recipes").then((res)=>{
@@ -11,6 +12,7 @@ const ShowImg = () => {
     }).then((data)=>{
       console.log(data);
       SetData(data.recipes)
+      SetFilteredddData(data.recipes)
     })
   },[])
 
@@ -36,24 +38,42 @@ const ShowImg = () => {
   }    
 
   function lunch(searchValue){
-     let data4=[...apiData].filter((a)=>{
+     let data3=apiData.filter((a)=>{
         return a.mealType[0] == searchValue
      })
-     SetData(data4)
-  }
-  return (
+     console.log("lunch")
+     SetFilteredddData(data3)
+    }
+  function dinner(value){
+     let data4=apiData.filter((a)=>{
+        return a.mealType[0] == value
+     })
+     console.log("dinner");
+     
+     SetFilteredddData(data4)
+    }
+
+    function breakF(value){
+     let data5=apiData.filter((a)=>{
+        return a.mealType[0] == value
+     })
+     console.log("breakfast");
+     SetFilteredddData(data5)
+    }
+  
+    return (
     
     <div>
       <div>
       <button class="sort" onClick={func1}>ASC</button>
       <button class="sort" onClick={func2}>DEC</button>
       <button class="sort" onClick={()=>lunch("Lunch")}>LUNCH</button>
-      <button class="sort">DINNER</button>
-      <button class="sort">BREAKFAST</button>
+      <button class="sort" onClick={()=>dinner("Dinner")}>DINNER</button>
+      <button class="sort" onClick={()=>breakF("BreakFast")}>BREAKFAST</button>
       </div>
       {
       
-       apiData.map((a,idx)=>{
+       filteredddData.map((a,idx)=>{
         return(
           <>
           <div id="card">
