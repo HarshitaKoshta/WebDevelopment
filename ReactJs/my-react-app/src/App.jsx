@@ -4,6 +4,7 @@ import Time from './Time';
 import ShowImg from './ShowImg';
 import TodoApp from './ToDo';
 import Practice from './Practice';
+import HideShow from './HideShow';
 
 
 
@@ -12,6 +13,7 @@ const App = () => {
     <div>
        {/* <Time/> */}
        <Practice/>
+       <HideShow/>
        {/* <ShowImg/> */}
        {/* <TodoApp/> */}
     </div>
