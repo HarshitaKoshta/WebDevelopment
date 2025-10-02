@@ -6,6 +6,7 @@ import TodoApp from './ToDo';
 import Practice from './Practice';
 import HideShow from './HideShow';
 import AutoCounter from './AutoCounter';
+import ImageSlider from './ImageSlider';
 
 
 
@@ -13,8 +14,9 @@ const App = () => {
   return (
     <div>
        {/* <Time/> */}
-       <Practice/>
-       <AutoCounter/>
+       {/* <Practice/> */}
+       {/* <AutoCounter/> */}
+       <ImageSlider/>
        {/* <HideShow/> */}
        {/* <ShowImg/> */}
        {/* <TodoApp/> */}
