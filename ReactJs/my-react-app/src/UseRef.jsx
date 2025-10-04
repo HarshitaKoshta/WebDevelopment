@@ -8,7 +8,7 @@ const UseRef = () => {
         a.current ++;
         console.log(`rerendering and the value of a is ${a.current}`);
         
-    })
+    },[])
   return (
     <div>
         <h2>Count: {count}</h2>
