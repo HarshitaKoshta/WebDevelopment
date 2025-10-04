@@ -7,6 +7,7 @@ import Practice from './Practice';
 import HideShow from './HideShow';
 import AutoCounter from './AutoCounter';
 import ImageSlider from './ImageSlider';
+import UseRef from './useRef';
 
 
 
@@ -16,7 +17,8 @@ const App = () => {
        {/* <Time/> */}
        {/* <Practice/> */}
        {/* <AutoCounter/> */}
-       <ImageSlider/>
+       {/* <ImageSlider/> */}
+       <UseRef/>
        {/* <HideShow/> */}
        {/* <ShowImg/> */}
        {/* <TodoApp/> */}
