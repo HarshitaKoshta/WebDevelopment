@@ -11,22 +11,51 @@ import UseRef from './useRef';
 
 
 
-const App = () => {
-  return (
-    <div>
+// const App = () => {
+//   return (
+//     <div>
        {/* <Time/> */}
        {/* <Practice/> */}
        {/* <AutoCounter/> */}
        {/* <ImageSlider/> */}
-       <UseRef/>
+      //  <UseRef/>
        {/* <HideShow/> */}
        {/* <ShowImg/> */}
        {/* <TodoApp/> */}
+    {/* </div>
+  )
+} */}
+
+const App = () => {
+  let [Input, setInput] = useState("")
+  let [data, setData] = useState([])
+
+  function func1(e){
+     setInput(e.target.value);
+  }
+    function done(){
+      setData([...data,Input])
+  }
+  return (
+    
+    <div>
+      <input onChange={func1} />
+      <button onClick={done}>Click</button>
+      {
+        data.map((a)=>{
+            return (
+              <>
+                 <h2>{a}</h2>
+              </>
+            )
+        })
+      }
     </div>
   )
 }
 
 export default App
+
 
 // const App = () => { 
   
