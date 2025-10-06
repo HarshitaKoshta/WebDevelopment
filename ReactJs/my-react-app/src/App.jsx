@@ -1,5 +1,5 @@
 
-// import React, {useEffect, useState} from 'react'
+import React, {useEffect, useState} from 'react'
 // import Time from './Time';
 // import ShowImg from './ShowImg';
 // import TodoApp from './ToDo';
@@ -26,64 +26,66 @@
   )
 } */}
 
-// const App = () => {
-//   let [Input, setInput] = useState("")
-//   let [data, setData] = useState([])
-
-
-//   function func1(e){
-//      setInput(e.target.value);
-//   }
-//     function done(){
-//       setData([...data,Input])
-//   }
-//   function del(idx){
-//       let Delete = data.filter((a,b)=>{
-//             return b!=idx;
-//          })
-//       setData(Delete)
-//   }
-//   return (
-//     <div>
-//       <input onChange={func1} />
-//       <input placeholder='email' />
-//       <button onClick={done}>Click</button>
-//       {
-//         data.map((a,id)=>{
-//             return (
-//               <>
-//                  <h2>{a}</h2>
-//                <button onClick={()=>del(id)}>Delete</button>
-//               </>
-//             )
-//         })
-//       }
-//     </div>
-//   )
-// }
-import React, {useState} from 'react'
-
 const App = () => {
- let [input, setInput] = useState({
-  name:"",
-  email:"",
-  passWord:""
- })
+  let [Input, setInput] = useState("")
+  let [data, setData] = useState([])
 
- function fun1(e){
-    let {name,value} = e.target
-    setInput({...input,[name]:value})
-    console.log(input);
-    
+
+  function func1(e){
+     setInput(e.target.value);
   }
-
+    function done(){
+      setData([...data,Input])
+  }
+  function del(idx){
+      let Delete = data.filter((a,b)=>{
+            return b!=idx;
+         })
+      setData(Delete)
+  }
   return (
     <div>
-      <input name='name' value={input.name} type="text" placeholder='name' onChange={fun1} /><br />
-      <input name='email' value={input.email} type="email" placeholder='email' onChange={fun1} /><br />
+      <input onChange={func1} />
+      {/* <input placeholder='email' /> */}
+      <button onClick={done}>Click</button>
+      {
+        data.map((a,id)=>{
+            return (
+              <>
+              <div id="task">
+                <h2>{a}</h2>
+               <button id="dele" onClick={()=>del(id)}>❌</button>
+               </div>
+              </>
+            )
+        })
+      }
     </div>
   )
 }
+// import React, {useState} from 'react'
+
+// const App = () => {
+//  let [input, setInput] = useState({
+//   name:"",
+//   email:"",
+//   passWord:""
+//  })
+
+//  function fun1(e){
+//     let {name,value} = e.target
+//     setInput({...input,[name]:value})
+//     console.log(input);
+    
+//   }
+
+//   return (
+//     <div>
+//       <input name='name' value={input.name} type="text" placeholder='name' onChange={fun1} /><br />
+//       <input name='email' value={input.email} type="email" placeholder='email' onChange={fun1} /><br />
+//     </div>
+//   )
+// }
 
 export default App
 

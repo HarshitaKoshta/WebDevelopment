@@ -1,57 +1,69 @@
-/* Background setup */
-body {
+*{
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: #0a1433; /* dark blue background */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.container{
+  color: aliceblue;
+  width: 100%;
   height: 100vh;
+  background: linear-gradient(rgb(3, 3, 121),rgb(5, 65, 148),blue);
+}
+.box{
+  width: 400px;
+  position: relative;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  box-shadow: 2px 2px 5px #89c9f3, -2px -2px 5px #89c9f3;
+  border-radius: 5px;
+  padding: 20px 40px;
+}
+.sign-up h1{
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 5px 8px;
+}
+.sBody{
+  margin-top: 20px;
+}
+.sBody div label{
+  font-size: 18px;
+  font-weight: 600;
 }
 
-#container {
-  background: #fff;
-  padding: 30px;
-  width: 420px;
-  border-radius: 10px;
-  
-}
-
-#input-group {
-  margin-bottom: 20px;
-  /* display: flex; */
-  /* flex-direction: column; */
-}
-
-/* Labels */
-#input-group label {
-  font-weight: bold;
-  margin-bottom: 5px;
-  margin-right: 20px;
-  color: #333;
-}
-
-/* Input + textarea underline style */
-#input-group input,
-#input-group textarea {
+.sBody div input{
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  margin-block: 4px;
   border: none;
-  border-bottom: 2px solid #ccc;
-  /* outline: none; */
-  /* padding: 8px 5px;/ */
-  font-size: 16px;
-  /* background: transparent; */
-  /* transition: border-color 0.3s; */
+  outline: none;
 }
-
-/* Focus effect */
-#input-group input:focus,
-#input-group textarea:focus {
-  border-bottom: 2px solid dodgerblue;
+.sBody div input[type="submit"]{
+  border: none;
+  color: white;
+  background-color: rgb(5, 168, 255);
+  font-size: 20px;
+  cursor: pointer;
 }
+.sBody div input[type="submit"]:hover{
+  background-color: rgb(0, 139, 238) ;
+}
+.sFooter p{
+   text-align: center;
+   font-weight: 600;
+   margin-top: 20px;
 
-/* Error text */
-#input-group span {
-  font-size: 14px;
-  color: red;
+}
+.sFooter p a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.sFooter p a:hover{
+  text-decoration: underline;
+  color: rgb(249, 246, 205);
+  
 }

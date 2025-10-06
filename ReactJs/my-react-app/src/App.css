@@ -14,7 +14,7 @@ h2{
   background:linear-gradient(blue,rgb(0, 255, 255),rgb(6, 24, 106),rgb(0, 140, 255))
 } */
 
-#card{
+/* #card{
   display: inline-block;
   height: 250px;
   width: 250px;
@@ -35,4 +35,18 @@ button{
   margin-left: 130px;
   background-color: rgb(128, 3, 113);
   
+} */
+
+input{
+  background-color: rgb(18, 104, 253);
+  height: 20px;
+  margin: 10px;
+}
+#task{
+  display: flex;
+}
+#dele{
+  margin-top: 20px;
+  height: 25px;
+  text-align: center;
 }

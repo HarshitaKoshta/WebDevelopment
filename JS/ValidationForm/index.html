@@ -7,38 +7,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="container">
-        <form >
-            <i></i>
-            <div id="input-group">
-                <label>Full Name</label>
-                <input type="text" id="" placeholder="Enter your name">
-                <span id="name-error">name is required</span>
-            </div>
-
-            <div id="input-group">
-                <label>Phone No.</label>
-                <input type="tel" placeholder="123 456 7890">
-                <span id="Phone-error">Phone is required</span>
-
-            </div>
-
-            <div id="input-group">
-                <label>Email Id</label>
-                <input type="email" placeholder="enter Email">
-                <span id="email-error">Email is required</span>
-
-            </div>
-
-            <div id="input-group">
-               <label>Your Message</label>
-               <textarea row="5" placeholder="Enter your message"></textarea>
-                <span id="message">message is required</span>
-            </div>
-            <button>SUBMIT</button>
-            <span id="Submit-error">Please fix the error</span>
-
-        </form>
+    <div class="container">
+        <div class="box">
+            <header class="sign-up">
+                <h1>SignUp</h1>
+            </header>
+            <main class="sBody">
+                <form action="#">
+                    <div>
+                       <label for="name">Full Name</label>
+                       <input type="text" placeholder="Enter your name" id="name" required>
+                       <span id="n-error">Name is required </span>
+                    </div>
+                    <div>
+                       <label for="email">Email</label>
+                       <input type="email" placeholder="abx@gmail.com" id="email" required >
+                    </div>
+                    <div>
+                       <label for="pass">Password</label>
+                       <input type="password" placeholder="atleast 8 character" id="pass" required min="8" max="20">
+                    </div>
+                    <div>
+                        <input type="submit" value="Create account">
+                    </div>
+                </form>
+            </main>
+            <footer class="sFooter">
+                <p>Already have an account? <a href="">LOGIN</a></p>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
