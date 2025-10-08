@@ -13,25 +13,25 @@
 
 
 // import SearchUser from './SearchUser'
-import React from 'react'
-import SignUp from './SignUp'
-import Login from './Login'
-import { Route, Routes } from 'react-router-dom'
-import ShowImg from './ShowImg'
+// import React from 'react'
+// import SignUp from './SignUp'
+// import Login from './Login'
+// import { Route, Routes } from 'react-router-dom'
+// import ShowImg from './ShowImg'
 
-const App = () => {
-  return (
-    <div>
-      <Routes>
-        <Route   path='/'  element={<ShowImg/>}/>
-        <Route   path='/signup' element={<SignUp/>}/>
-        <Route   path='/login' element={<Login/>}/>
-      </Routes>
-    </div>
-  )
-}
+// const App = () => {
+//   return (
+//     <div>
+//       <Routes>
+//         <Route   path='/'  element={<ShowImg/>}/>
+//         <Route   path='/signup' element={<SignUp/>}/>
+//         <Route   path='/login' element={<Login/>}/>
+//       </Routes>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 // const App = () => {
 //   return (
@@ -44,10 +44,23 @@ export default App
       
        {/* <HideShow/> */}
        {/* <ShowImg/> */}
-       {/* <TodoApp/> */}
+      //  {/* <TodoApp/> */}
     {/* </div>
   )
-} */}
+     } */}
+
+     import React from 'react'
+import Practice from './Practice'
+     
+     const App = () => {
+       return (
+         <div>
+          <Practice/>
+         </div>
+       )
+     }
+     
+     export default App
 
 // const App = () => {
 //   let [Input, setInput] = useState("")

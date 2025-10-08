@@ -1,19 +1,43 @@
+// import React, { useState } from 'react'
+
+// const Practice = () => {
+//     let [setname,getName] = useState("Harshita")
+
+//     function name(){
+//       if (setname === "Harshita") {
+//       getName("pihu")
+//     } else {
+//       getName("Harshita")
+//     }
+//     }
+//   return (
+//     <div>
+//     <h2>{setname}</h2>
+//     <button onClick={name}>Name</button>
+//     </div>
+//   )
+// }
+
+// export default Practice
+
 import React, { useState } from 'react'
 
 const Practice = () => {
-    let [setname,getName] = useState("Harshita")
+  const [data, setdata] = useState("")
+  const [showData, setShowData] = useState("")
 
-    function name(){
-      if (setname === "Harshita") {
-      getName("pihu")
-    } else {
-      getName("Harshita")
-    }
-    }
+  function func(e){
+     let name = e.target.value
+     setdata(name)
+  }
+  function show(){
+    setShowData(data)
+  }
   return (
     <div>
-    <h2>{setname}</h2>
-    <button onClick={name}>Name</button>
+        <input type="text" onChange={func} />
+        <button onClick={show}>Click</button>
+         <h3>{showData}</h3> 
     </div>
   )
 }
