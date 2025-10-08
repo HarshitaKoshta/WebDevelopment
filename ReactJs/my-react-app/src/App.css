@@ -38,9 +38,11 @@ button{
 } */
 
 input{
-  background-color: rgb(18, 104, 253);
-  height: 20px;
+  background:linear-gradient( rgb(164, 95, 249),rgb(16, 16, 235),rgb(61, 0, 147));
+  height: 50px;
+  font-size: 40px;
   margin: 10px;
+  color: rgb(205, 227, 246);
 }
 #task{
   display: flex;
