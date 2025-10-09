@@ -1,0 +1,36 @@
+#card{
+  display: inline-block;
+  height: 250px;
+  width: 250px;
+  margin: 25px;
+}
+#card img{
+  border-radius: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+button{
+  background-color: rgb(255, 0, 76);
+}
+div{
+  background-color: rgb(255, 0, 128);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+  color: rgb(174, 255, 0);
+  font-weight: 1000;
+  font-size: 30px;
+  margin: 0;
+  border: 2px solid rgb(206, 255, 9);
+  text-align: center;
+}
+h2{
+  background:linear-gradient(blue,rgb(0, 255, 255),rgb(6, 24, 106),rgb(0, 140, 255))
+}
+.sort{
+  margin-top: 20px;
+  margin-left: 130px;
+  background-color: rgb(128, 3, 113);
+  
+}

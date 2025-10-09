@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react'
-
+import './ShowImg.css'
 
 const ShowImg = () => {
   let [apiData,SetData] = useState([])
@@ -82,7 +82,6 @@ const ShowImg = () => {
             <p>Rating : {a.rating}⭐</p>
             <button  onClick={(()=>{dlt(idx) })}>Delete</button>
           </div>
-          
           </>
         )
        })

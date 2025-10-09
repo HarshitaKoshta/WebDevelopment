@@ -4,7 +4,6 @@
 // import Time from './Time';
 // import ShowImg from './ShowImg';
 // import TodoApp from './ToDo';
-// import Practice from './Practice';
 // import HideShow from './HideShow';
 // import AutoCounter from './AutoCounter';
 // import ImageSlider from './ImageSlider';
@@ -18,14 +17,17 @@
 // import Login from './Login'
 // import { Route, Routes } from 'react-router-dom'
 // import ShowImg from './ShowImg'
+// import Practice from './Practice'
+
 
 // const App = () => {
 //   return (
 //     <div>
 //       <Routes>
-//         <Route   path='/'  element={<ShowImg/>}/>
+//         <Route   path='/'  element={<ShowImg/>} />
 //         <Route   path='/signup' element={<SignUp/>}/>
 //         <Route   path='/login' element={<Login/>}/>
+//         <Route   path='practice' element={<Practice/>}/>
 //       </Routes>
 //     </div>
 //   )
@@ -33,34 +35,21 @@
 
 // export default App
 
-// const App = () => {
-//   return (
-//     <div>
-       {/* <Time/> */}
-       {/* <Practice/> */}
-       {/* <AutoCounter/> */}
-       {/* <ImageSlider/> */}
-      //  <UseRef/>
-      
-       {/* <HideShow/> */}
-       {/* <ShowImg/> */}
-      //  {/* <TodoApp/> */}
-    {/* </div>
-  )
-     } */}
 
-     import React from 'react'
-import Practice from './Practice'
-     
-     const App = () => {
-       return (
-         <div>
-          <Practice/>
-         </div>
-       )
-     }
-     
-     export default App
+import React from 'react'
+import ApiFetch from './ApiFetch'
+
+const App = () => {
+  return (
+    <div>
+      <ApiFetch/>
+    </div>
+  )
+}
+
+export default App
+
+
 
 // const App = () => {
 //   let [Input, setInput] = useState("")

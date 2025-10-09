@@ -22,6 +22,7 @@
 
 import React, { useState } from 'react'
 
+
 const Practice = () => {
   const [data, setdata] = useState("")
   const [showData, setShowData] = useState("")
