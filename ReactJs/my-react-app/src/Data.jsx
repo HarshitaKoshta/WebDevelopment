@@ -7,7 +7,9 @@ const Data = () => {
     fetch("https://dummyjson.com/products").then((res){
         return res.json()
     }).then(()=>{
-
+       console.log(data);
+      SetData(data.recipes)
+      SetFilteredddData(data.recipes)
     })
     
     })

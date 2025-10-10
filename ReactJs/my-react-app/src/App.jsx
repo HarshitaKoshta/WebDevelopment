@@ -38,11 +38,15 @@
 
 import React from 'react'
 import ApiFetch from './ApiFetch'
+import UseReducer from './UseReducer'
+import Home from './Home'
 
 const App = () => {
   return (
     <div>
-      <ApiFetch/>
+      {/* <UseReducer//> */}
+      <Home data="nameee"/>
+      {/* <ApiFetch/> */}
     </div>
   )
 }
