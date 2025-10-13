@@ -12,46 +12,55 @@
 
 
 // import SearchUser from './SearchUser'
-// import React from 'react'
-// import SignUp from './SignUp'
-// import Login from './Login'
-// import { Route, Routes } from 'react-router-dom'
-// import ShowImg from './ShowImg'
+import React,{useState} from 'react'
+import SignUp from './SignUp'
+import Login from './Login'
+import { Route, Routes } from 'react-router-dom'
+import ShowImg from './ShowImg'
 // import Practice from './Practice'
+import AddCart from './AddCart'
 
-
-// const App = () => {
-//   return (
-//     <div>
-//       <Routes>
-//         <Route   path='/'  element={<ShowImg/>} />
-//         <Route   path='/signup' element={<SignUp/>}/>
-//         <Route   path='/login' element={<Login/>}/>
-//         <Route   path='practice' element={<Practice/>}/>
-//       </Routes>
-//     </div>
-//   )
-// }
-
-// export default App
-
-
-import React from 'react'
-import ApiFetch from './ApiFetch'
-import UseReducer from './UseReducer'
-import Home from './Home'
 
 const App = () => {
+   let [apiData,SetData] = useState([])
+   let [filteredddData,SetFilteredddData] = useState([])
+
+  let [cart,SetCart]= useState([])
+  console.log(cart,"addddd");
+    
   return (
     <div>
-      {/* <UseReducer//> */}
-      <Home data="nameee"/>
-      {/* <ApiFetch/> */}
+      <Routes>
+          <Route   path='/'  element={<ShowImg cart={cart} SetCart={SetCart}  apiData={apiData} SetData={SetData} filteredddData={filteredddData}  SetFilteredddData={SetFilteredddData}  />} />
+        {/* <Route   path='/show'  element={<ShowImg/>} /> */}
+        <Route   path='/signup' element={<SignUp/>}/>
+        <Route   path='/login' element={<Login/>}/>
+        {/* <Route   path='practice' element={<Practice/>}/> */}
+        <Route  path='/cart' element={<AddCart cart={cart}/>}/>
+      </Routes>
     </div>
   )
 }
 
 export default App
+
+
+// import React from 'react'
+// import ApiFetch from './ApiFetch'
+// import UseReducer from './UseReducer'
+// import Home from './Home'
+
+// const App = () => {
+//   return (
+//     <div>
+//       {/* <UseReducer//> */}
+//       <Home data="nameee"/>
+//       {/* <ApiFetch/> */}
+//     </div>
+//   )
+// }
+
+// export default App
 
 
 

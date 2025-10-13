@@ -1,10 +1,11 @@
 
 import React, { useEffect, useState } from 'react'
 import './ShowImg.css'
+import { Link } from 'react-router-dom'
 
-const ShowImg = () => {
-  let [apiData,SetData] = useState([])
-  let [filteredddData,SetFilteredddData]= useState([])
+const ShowImg = ({cart,SetCart, apiData,SetData,filteredddData,SetFilteredddData}) => {
+//   let [apiData,SetData] = useState([])
+//   let [filteredddData,SetFilteredddData]= useState([])
 
   useEffect(()=>{
     fetch("https://dummyjson.com/recipes").then((res)=>{
@@ -62,9 +63,12 @@ const ShowImg = () => {
     }
   
     return (
-    
+       <> 
+      <Link  to={'/cart'}>  
+       <button>add to Cart {cart.length}</button>
+      </Link>
     <div>
-      <div>
+      <div id="ssort">
       <button class="sort" onClick={func1}>ASC</button>
       <button class="sort" onClick={func2}>DEC</button>
       <button class="sort" onClick={()=>lunch("Lunch")}>LUNCH</button>
@@ -80,7 +84,8 @@ const ShowImg = () => {
             <img src={a.image} />
             <p>{a.name}</p>
             <p>Rating : {a.rating}⭐</p>
-            <button  onClick={(()=>{dlt(idx) })}>Delete</button>
+            {/* <button  onClick={(()=>{dlt(idx) })}>Delete</button> */}
+            <button onClick={()=> SetCart([...cart,a])}>ADD</button>
           </div>
           </>
         )
@@ -88,6 +93,7 @@ const ShowImg = () => {
       }
      
     </div>
+     </>
   )
 }
 
