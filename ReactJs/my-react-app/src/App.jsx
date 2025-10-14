@@ -12,37 +12,37 @@
 
 
 // import SearchUser from './SearchUser'
-import React,{useState} from 'react'
-import SignUp from './SignUp'
-import Login from './Login'
-import { Route, Routes } from 'react-router-dom'
-import ShowImg from './ShowImg'
-// import Practice from './Practice'
-import AddCart from './AddCart'
+// import React,{useState} from 'react'
+// import SignUp from './SignUp'
+// import Login from './Login'
+// import { Route, Routes } from 'react-router-dom'
+// import ShowImg from './ShowImg'
+// // import Practice from './Practice'
+// import AddCart from './AddCart'
 
 
-const App = () => {
-   let [apiData,SetData] = useState([])
-   let [filteredddData,SetFilteredddData] = useState([])
+// const App = () => {
+//    let [apiData,SetData] = useState([])
+//    let [filteredddData,SetFilteredddData] = useState([])
 
-  let [cart,SetCart]= useState([])
-  console.log(cart,"addddd");
+//   let [cart,SetCart]= useState([])
+//   console.log(cart,"addddd");
     
-  return (
-    <div>
-      <Routes>
-          <Route   path='/'  element={<ShowImg cart={cart} SetCart={SetCart}  apiData={apiData} SetData={SetData} filteredddData={filteredddData}  SetFilteredddData={SetFilteredddData}  />} />
-        {/* <Route   path='/show'  element={<ShowImg/>} /> */}
-        <Route   path='/signup' element={<SignUp/>}/>
-        <Route   path='/login' element={<Login/>}/>
-        {/* <Route   path='practice' element={<Practice/>}/> */}
-        <Route  path='/cart' element={<AddCart cart={cart}/>}/>
-      </Routes>
-    </div>
-  )
-}
+//   return (
+//     <div>
+//       <Routes>
+//           <Route   path='/'  element={<ShowImg cart={cart} SetCart={SetCart}  apiData={apiData} SetData={SetData} filteredddData={filteredddData}  SetFilteredddData={SetFilteredddData}  />} />
+//         {/* <Route   path='/show'  element={<ShowImg/>} /> */}
+//         <Route   path='/signup' element={<SignUp/>}/>
+//         <Route   path='/login' element={<Login/>}/>
+//         {/* <Route   path='practice' element={<Practice/>}/> */}
+//         <Route  path='/cart' element={<AddCart cart={cart}/>}/>
+//       </Routes>
+//     </div>
+//   )
+// }
 
-export default App
+// export default App
 
 
 // import React from 'react'
@@ -201,3 +201,22 @@ export default App
 // }
 
 // export default App
+
+
+
+
+///////// prps context................
+
+
+import React from 'react'
+import ShowImg from './ShowImg'
+
+const App = () => {
+  return (
+    <div>
+       <ShowImg/>
+    </div>
+  )
+}
+
+export default App
