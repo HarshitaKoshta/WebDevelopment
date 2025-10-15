@@ -101,11 +101,28 @@
 
 import React, { useContext } from 'react'
 import Context from './Context'
+import './ShowImg.css';
 
 const ShowImg = () => {
- let data= useContext(Context)
-  return (
-    <div>{data}</div>
+
+ let {dispatch,state}= useContext(Context)
+
+   return (
+      <>
+      <button>CART</button>
+   {
+        state.apiData.map((a,index)=>{
+           return(<>
+           <div id='card'>
+          <img  src={a.image}/>
+             <p>{a.name}</p>
+             <p> Rating: {a.rating}</p> 
+             <button  onClick={()=> SetCart([...cart,a])}>add </button>
+          </div>
+          </>)
+         })
+      } 
+   </>
   )
 }
 

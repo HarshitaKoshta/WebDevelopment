@@ -3,35 +3,35 @@ let Context = createContext()
 
 export default Context
 
-const ContextP = ((Children)=>{
+const ContextP = ({children})=>{
     let data = {
         apiData:[],
         cart:[]
     }
-    function reduser(apiData,action){
-       if(action.type=="Fetch_Data"){
+    function reduser(state,action){
+       if(action.type=="FETCH_DATA"){
         return{
             apiData:action.payload
         }
        }
     }
     useEffect(()=>{
-      fetch().then((res)=>{
-          return res.json
+      fetch("https://dummyjson.com/recipes").then((res)=>{
+          return res.json()
       }).then((data)=>{
-          data.payload
+          dispatch({type:"FETCH_DATA",payload:data.recipes})
       })
     },[])
     
     
-    let [val, dispatch] = useReducer(reduser, data)
+    let [state, dispatch] = useReducer(reduser, data)
        return(
         <div>
-            <Context.Provider>
-             {Children}
+            <Context.Provider value={{state,dispatch}}>
+             {children}
             </Context.Provider>
         </div>
        )
-}) 
+}
 
-export {ContextP};
+export {ContextP}

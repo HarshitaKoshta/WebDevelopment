@@ -4,14 +4,14 @@ import './index.css'
 import './App.css'
 import App from './App.jsx'
 import {BrowserRouter} from 'react-router-dom'
-import Context from './Context.jsx'
+import {ContextP} from './Context.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     {/* <BrowserRouter> */}
-   < Context.Provider value={"imagessss"}>
-    <App/>
-    </Context.Provider>
+<ContextP>
+  <App/>
+</ContextP>
     {/* </BrowserRouter> */}
   </StrictMode>,
 )
