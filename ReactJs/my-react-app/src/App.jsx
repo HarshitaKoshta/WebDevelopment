@@ -208,19 +208,32 @@
 ///////// prps context................
 
 
-import React from 'react'
-import ShowImg from './ShowImg'
-import { Route, Routes } from 'react-router-dom'
+// import React from 'react'
+// import ShowImg from './ShowImg'
+// import { Route, Routes } from 'react-router-dom'
 
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Routes>
+//          <Route path='/' element={<ShowImg/>}></Route>
+//          <Route path='/cart' element={<AddCart/>}></Route>
+
+//       </Routes>
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React from 'react'
+import ToDoList from './ToDoList'
 
 const App = () => {
   return (
     <div>
-      <Routes>
-         <Route path='/' element={<ShowImg/>}></Route>
-         <Route path='/cart' element={<AddCart/>}></Route>
-
-      </Routes>
+      <ToDoList/>
     </div>
   )
 }
