@@ -30,7 +30,7 @@ import React from 'react'
 // }
 import Context from './Context'
 
-const AddToCart = () => {
+const AddCart = () => {
   let {state ,dispatch} =    useContext(Context)
   console.log(state.cart,"hehehe");
   

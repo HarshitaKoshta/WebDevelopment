@@ -209,6 +209,7 @@
 
 
 // import React from 'react'
+// import AddCart from './AddCart'
 // import ShowImg from './ShowImg'
 // import { Route, Routes } from 'react-router-dom'
 
@@ -217,9 +218,8 @@
 //   return (
 //     <div>
 //       <Routes>
-//          <Route path='/' element={<ShowImg/>}></Route>
-//          <Route path='/cart' element={<AddCart/>}></Route>
-
+//          <Route path='/' element={<ShowImg/>}/>
+//          <Route path='/cart' element={<AddCart/>}/>
 //       </Routes>
 //     </div>
 //   )
@@ -228,12 +228,15 @@
 // export default App
 
 import React from 'react'
-import ToDoList from './ToDoList'
+import Food from './Food'
+// import ToDoList1 from './ToDoList1'
+// 
 
 const App = () => {
   return (
     <div>
-      <ToDoList/>
+      {/* <ToDoList1/> */}
+      <Food/>
     </div>
   )
 }

@@ -4,12 +4,12 @@ const Data = () => {
     let [apiData,SetData] = useState([])
     
     useEffect(()=>{
-    fetch("https://dummyjson.com/products").then((res){
+    fetch("https://dummyjson.com/products").then((res)=>{
         return res.json()
     }).then(()=>{
-       console.log(data);
-      SetData(data.recipes)
-      SetFilteredddData(data.recipes)
+       console.log(apiData);
+      SetData(apiData.recipes)
+      SetFilteredddData(apiData.recipes)
     })
     
     })

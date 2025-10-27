@@ -102,6 +102,7 @@
 import React, { useContext } from 'react'
 import Context from './Context'
 import './ShowImg.css';
+import { Link } from 'react-router-dom'
 
 const ShowImg = () => {
 
@@ -114,7 +115,7 @@ const ShowImg = () => {
         state.apiData.map((a,index)=>{
            return(<>
            <div id='card'>
-          <img  src={a.image}/>
+          <img  src={a.image[0]}/>
              <p>{a.name}</p>
              <p> Rating: {a.rating}</p> 
              <button  onClick={()=> SetCart([...cart,a])}>add </button>
