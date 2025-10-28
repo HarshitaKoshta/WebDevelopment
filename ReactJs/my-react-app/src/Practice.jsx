@@ -20,25 +20,44 @@
 
 // export default Practice
 
+// import React, { useState } from 'react'
+
+
+// const Practice = () => {
+//   const [data, setdata] = useState("")
+//   const [showData, setShowData] = useState("")
+
+//   function func(e){
+//      let name = e.target.value
+//      setdata(name)
+//   }
+//   function show(){
+//     setShowData(data)
+//   }
+//   return (
+//     <div>
+//         <input type="text" onChange={func} />
+//         <button onClick={show}>Click</button>
+//          <h3>{showData}</h3> 
+//     </div>
+//   )
+// }
+
+// export default Practice
+
 import React, { useState } from 'react'
 
-
 const Practice = () => {
-  const [data, setdata] = useState("")
-  const [showData, setShowData] = useState("")
+  const [color, setcolor] = useState("white")
 
-  function func(e){
-     let name = e.target.value
-     setdata(name)
+  function fun1(){
+    setcolor("red")
   }
-  function show(){
-    setShowData(data)
-  }
+
   return (
-    <div>
-        <input type="text" onChange={func} />
-        <button onClick={show}>Click</button>
-         <h3>{showData}</h3> 
+    <div style={{backgroundColor:color}}>
+      <h1>{color}</h1>
+      <button onClick={fun1}>Change</button>
     </div>
   )
 }

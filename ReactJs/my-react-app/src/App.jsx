@@ -1,6 +1,8 @@
 
 // import React, {useEffect, useState} from 'react'
 
+import Timer from "./Timer"
+
 // import Time from './Time';
 // import ShowImg from './ShowImg';
 // import TodoApp from './ToDo';
@@ -209,8 +211,10 @@
 
 
 // import React from 'react'
+// import Practice from './Practice'
 // import AddCart from './AddCart'
 // import ShowImg from './ShowImg'
+// // import OnePage from './OnePage'
 // import { Route, Routes } from 'react-router-dom'
 
 
@@ -220,6 +224,7 @@
 //       <Routes>
 //          <Route path='/' element={<ShowImg/>}/>
 //          <Route path='/cart' element={<AddCart/>}/>
+//          <Route path='/OnePage/:id' element={<OnePage/>}/>
 //       </Routes>
 //     </div>
 //   )
@@ -227,16 +232,18 @@
 
 // export default App
 
-import React from 'react'
-import Food from './Food'
+// import React from 'react'
+// import Food from './Food'
 // import ToDoList1 from './ToDoList1'
-// 
+
 
 const App = () => {
   return (
     <div>
       {/* <ToDoList1/> */}
-      <Food/>
+      {/* <Food/> */}
+      {/* <Practice/> */}
+      <Timer/>
     </div>
   )
 }
