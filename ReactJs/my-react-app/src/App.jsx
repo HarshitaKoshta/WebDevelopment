@@ -211,7 +211,7 @@ import Timer from "./Timer"
 
 
 // import React from 'react'
-// import Practice from './Practice'
+import Practice from './Practice'
 // import AddCart from './AddCart'
 // import ShowImg from './ShowImg'
 // // import OnePage from './OnePage'
@@ -242,8 +242,8 @@ const App = () => {
     <div>
       {/* <ToDoList1/> */}
       {/* <Food/> */}
-      {/* <Practice/> */}
-      <Timer/>
+      <Practice/>
+      {/* <Timer/> */}
     </div>
   )
 }

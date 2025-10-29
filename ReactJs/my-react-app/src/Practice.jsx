@@ -45,19 +45,61 @@
 
 // export default Practice
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+
+// const Practice = () => {
+//   const [color, setcolor] = useState("white")
+
+//   function fun1(){
+//     setcolor("red")
+//   }
+
+//   return (
+//     <div style={{backgroundColor:color}}>
+//       <h1>{color}</h1>
+//       <button onClick={fun1}>Change</button>
+//     </div>
+//   )
+// }
+
+// export default Practice
+
+// import React, { useEffect, useState } from 'react'
+
+// const Practice = () => {
+//   const [Count, setCount] = useState(0)
+
+//   useEffect(()=>{
+//     console.log("hellooo");
+    
+//   },[])
+//   return (
+//     <div>
+//       <h2>{Count}</h2>
+//       <button onClick={()=>{setCount(Count+1)}}>click</button>
+//     </div>
+//   )
+// }
+
+// export default Practice
+
+import React, { useReducer } from 'react'
 
 const Practice = () => {
-  const [color, setcolor] = useState("white")
-
-  function fun1(){
-    setcolor("red")
+  function reducer(count,action){
+        if(action.type=="++"){
+          return count+1
+        }else if(action.type=="--"){
+          return count-1
+        }
   }
-
+  
+  const [count, dispatch] = useReducer(reducer, 0)
   return (
-    <div style={{backgroundColor:color}}>
-      <h1>{color}</h1>
-      <button onClick={fun1}>Change</button>
+    <div>
+      <h1>{count}</h1>
+      <button onClick={()=>dispatch({type:"++"})}>++</button>
+      <button onClick={()=>dispatch({type:"--"})}>--</button>
     </div>
   )
 }
