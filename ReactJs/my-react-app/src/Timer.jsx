@@ -1,27 +1,37 @@
-import React, { useState } from "react";
-  let interval 
-const Timer = () => {
-  const [time, setTime] = useState(0);
-  if(!interval){
-  interval = setInterval(() => {
-    setTime(prev => prev + 1)
-  }, 1000)
-}
+import React, { useState, useEffect } from "react";
 
-  function stop(){
-    clearInterval(interval)
-    interval = null
-  }
-  function reset(){
-    setTime(0)
-  }
+const Timer = () => {
+  let [seconds, setSecond] = useState(0);
+  let [IsRunning, setIsRunning] = useState(false);
+
+  useEffect(() => {
+    let interval
+    if (IsRunning) {
+      interval = setInterval(() => {
+        setSecond(prev => prev + 1);
+      }, 100);
+    }else{
+      clearInterval(interval)
+    }
+    return () => clearInterval(interval);
+  }, [IsRunning]);
+
+ const formatTime = () => {
+    const mins = Math.floor(seconds / 60);
+    const secs = seconds % 60;
+    return `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+  };
+
   return (
     <div>
-      <h1>{time}</h1>
-      <button onClick={stop}>Stop</button>
-      <button onClick={reset}>Reset</button>
+      <h1>🕛STOP WATCH</h1>
+      <h1>{formatTime()}</h1>
+
+      <button onClick={() => setIsRunning(true)}>Start</button>
+      <button onClick={() => setIsRunning(false)}>Stop</button>
+      <button onClick={() => { setSecond(0); setIsRunning(false); }}>Reset</button>
     </div>
-  )
-}
+  );
+};
 
 export default Timer;
