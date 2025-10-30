@@ -132,7 +132,7 @@
 
 
 ////////////////input//////////////
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
 
 // const Practice = () => {
 // const [inp, setinp] = useState("")
@@ -151,19 +151,22 @@ import React, { useState } from 'react'
 // export default Practice
 
 
-import React from 'react'
+import React, { useState } from 'react'
 
 const Practice = () => {
-const [inp, setinp] = useState('white')
- function change(){
-  if(inp=='white'){
-    setinp('white')
-  }else{
-    setinp('black')
+  const [inp, setinp] = useState('white')
+
+  function change() {
+    if (inp === 'white') {
+      setinp('black')
+    } else {
+      setinp('white')
+    }
   }
- }
+
   return (
-    <div>
+    <div style={{ backgroundColor: inp, height: "100vh",color: inp === 'white' ? 'black' : 'white' }}>
+      <h1>{inp === 'white' ? 'Light Mode ☀️' : 'Dark Mode 🌙'}</h1>
       <button onClick={change}>Change Mode</button>
     </div>
   )
