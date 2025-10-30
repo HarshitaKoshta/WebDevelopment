@@ -83,23 +83,88 @@
 
 // export default Practice
 
-import React, { useReducer } from 'react'
+// import React, { useReducer } from 'react'
+
+// const Practice = () => {
+//   function reducer(count,action){
+//         if(action.type=="++"){
+//           return count+1
+//         }else if(action.type=="--"){
+//           return count-1
+//         }
+//   }
+  
+//   const [count, dispatch] = useReducer(reducer, 0)
+//   return (
+//     <div>
+//       <h1>{count}</h1>
+//       <button onClick={()=>dispatch({type:"++"})}>++</button>
+//       <button onClick={()=>dispatch({type:"--"})}>--</button>
+//     </div>
+//   )
+// }
+
+/////////////CARD//////////////// 
+
+// import React from 'react'
+// import './Practice.css'
+// const Practice = () => {
+ 
+//   return (
+//     <div>
+//        <Card name="Harshita" age='20' bio="Developer" />
+//     </div>
+//   )
+// }
+
+// const Card = (props) => {
+//   return (
+//     <div id='card'>
+//       <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGdpcmx8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&q=60&w=600" alt="" />
+//        <p>Hello! I am {props.name}!</p>
+//        <p>Age: {props.age}</p>
+//        <p>Bio: {props.bio}</p>
+//     </div>
+//   )
+// }
+
+// export default Practice
+
+
+////////////////input//////////////
+import React, { useState } from 'react'
+
+// const Practice = () => {
+// const [inp, setinp] = useState("")
+//   function change(e){
+//    console.log(e.target.value);
+//    setinp(e.target.value)
+//   }
+//   return (
+//     <div>
+//       <input onChange={change} type="text" name="" id="" />
+//       <h2>{inp}</h2>
+//     </div>
+//   )
+// }
+
+// export default Practice
+
+
+import React from 'react'
 
 const Practice = () => {
-  function reducer(count,action){
-        if(action.type=="++"){
-          return count+1
-        }else if(action.type=="--"){
-          return count-1
-        }
+const [inp, setinp] = useState('white')
+ function change(){
+  if(inp=='white'){
+    setinp('white')
+  }else{
+    setinp('black')
   }
-  
-  const [count, dispatch] = useReducer(reducer, 0)
+ }
   return (
     <div>
-      <h1>{count}</h1>
-      <button onClick={()=>dispatch({type:"++"})}>++</button>
-      <button onClick={()=>dispatch({type:"--"})}>--</button>
+      <button onClick={change}>Change Mode</button>
     </div>
   )
 }

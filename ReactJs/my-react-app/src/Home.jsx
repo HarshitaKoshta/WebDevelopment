@@ -1,8 +1,20 @@
 import React from 'react'
 
-const Home = ({data}) => {
+const Home = () => {
+  let user="pihu"
   return (
-    <div>{data}</div>
+    <div>
+      helooooooooooo homeeeeeee
+      <New name={user}/>
+    </div>
+  )
+}
+
+const New = ({name}) => {
+  return (
+    <div>
+        {name}
+    </div>
   )
 }
 

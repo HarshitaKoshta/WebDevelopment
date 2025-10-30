@@ -1,7 +1,8 @@
 
 // import React, {useEffect, useState} from 'react'
 
-import Timer from "./Timer"
+
+// import Timer from "./Timer"
 
 // import Time from './Time';
 // import ShowImg from './ShowImg';
@@ -211,11 +212,9 @@ import Timer from "./Timer"
 
 
 // import React from 'react'
-import Practice from './Practice'
 // import AddCart from './AddCart'
 // import ShowImg from './ShowImg'
 // // import OnePage from './OnePage'
-// import { Route, Routes } from 'react-router-dom'
 
 
 // const App = () => {
@@ -237,13 +236,36 @@ import Practice from './Practice'
 // import ToDoList1 from './ToDoList1'
 
 
+// import { Route,Routes } from "react-router-dom"
+// import Navbar from "./Navbar"
+// import Home from "./Home"
+// import About from "./About"
+// import Login from "./Login"
+// import SignUp from "./SignUp"
+
+// const App = () => {
+//   return (
+//     <div>
+//       <Navbar/>
+//       <Routes>
+//          <Route path='/' element={<Home/>}/>
+//          <Route path='/about' element={<About/>}/>
+//          <Route path='/login' element={<Login/>}/>
+//          <Route path='/signup' element={<SignUp/>}/>
+//       </Routes>
+//     </div>
+//   )
+// }
+
+// export default App
+
+import React from 'react'
+import  Practice  from './Practice'
+
 const App = () => {
   return (
     <div>
-      {/* <ToDoList1/> */}
-      {/* <Food/> */}
       <Practice/>
-      {/* <Timer/> */}
     </div>
   )
 }

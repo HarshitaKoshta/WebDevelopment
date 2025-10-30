@@ -1,0 +1,13 @@
+#card{
+    height: auto;
+    width: 150px;
+    background-color: blueviolet;
+}
+
+#card img {
+    height: 100px;
+    width: 100px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
