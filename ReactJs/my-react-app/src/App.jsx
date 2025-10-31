@@ -260,14 +260,16 @@
 // export default App
 
 import React from 'react'
-import Dropdown from './Dropdown'
+// import Dropdown from './Dropdown'
+import BootStrap from './BootStrap'
 // import  Practice  from './Practice'
 
 const App = () => {
   return (
     <div>
       {/* <Practice/> */}
-      <Dropdown/>
+      {/* <Dropdown/> */}
+      <BootStrap/>
     </div>
   )
 }
