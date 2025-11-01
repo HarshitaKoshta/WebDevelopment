@@ -4,6 +4,8 @@ const ApiFetch = () => {
   let [apiData, setApiData] = useState([]);
   let [filteredData, setFilteredData] = useState([]);
   let [search, setSearch] = useState("");
+  const [loading, setLoading] = useState(true);
+
 
   useEffect(() => {
     fetch(" https://dummyjson.com/products/search?q=phone")
@@ -12,9 +14,14 @@ const ApiFetch = () => {
         setApiData(data.products);
         console.log(data);
         setFilteredData(data.products);
-      });
+         setLoading(false);
+      })
+      .catch(() => setLoading(false));
   }, []);
 
+  if (loading) {
+    return <h2>Loading...</h2>;
+  }
   function handleSearch() {
     if (search.trim() === "") {
       setFilteredData([]); 

@@ -151,23 +151,71 @@
 // export default Practice
 
 
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+
+// const Practice = () => {
+//   const [inp, setinp] = useState('white')
+
+//   function change() {
+//     if (inp === 'white') {
+//       setinp('black')
+//     } else {
+//       setinp('white')
+//     }
+//   }
+
+//   return (
+//     <div style={{ backgroundColor: inp, height: "100vh",color: inp === 'white' ? 'black' : 'white' }}>
+//       <h1>{inp === 'white' ? 'Light Mode ☀️' : 'Dark Mode 🌙'}</h1>
+//       <button onClick={change}>Change Mode</button>
+//     </div>
+//   )
+// }
+
+// export default Practice
+
+
+import React, { useEffect, useState } from 'react'
 
 const Practice = () => {
-  const [inp, setinp] = useState('white')
+  const [data, setdata] = useState([])
+  let [filteredData, setFilteredData] = useState([]);
+  let [search, setSearch] = useState("");
 
-  function change() {
-    if (inp === 'white') {
-      setinp('black')
-    } else {
-      setinp('white')
-    }
+  useEffect(()=>{
+    fetch(" https://dummyjson.com/products/search?q=phone")
+    .then((res)=>res.json())
+    .then((data)=>{
+      setdata(data.products)
+      console.log(data);
+      setFilteredData(data.products);
+    })
+  },[])
+
+  function handleChange(e){
+     setSearch(e.target.value)
+  } 
+
+  function handleSearch(){
+    const result = data.filter((item) =>
+      item.category ===search
+    )
+      setFilteredData(result)
   }
-
   return (
-    <div style={{ backgroundColor: inp, height: "100vh",color: inp === 'white' ? 'black' : 'white' }}>
-      <h1>{inp === 'white' ? 'Light Mode ☀️' : 'Dark Mode 🌙'}</h1>
-      <button onClick={change}>Change Mode</button>
+    <div>
+      <input type="text" placeholder='search product..' value={search} onChange={handleChange} />
+      <button onClick={handleSearch}>Search</button>
+      <div>
+        {
+          filteredData.map((item)=>(
+            <div>
+            <img src={item.images} alt={item.title} width="180" height="180" />
+            <p>{item.title}</p>
+          </div>
+          ))
+        }
+      </div>
     </div>
   )
 }
