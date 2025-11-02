@@ -263,18 +263,18 @@ import React from 'react'
 import LoginForm from './LoginForm'
 // import Dropdown from './Dropdown'
 // import BootStrap from './BootStrap'
-// import  Practice  from './Practice'
+import  Practice  from './Practice'
 // import ApiFetch from './ApiFetch'
 
 
 const App = () => {
   return (
     <div>
-      {/* <Practice/> */}
+      <Practice/>
       {/* <Dropdown/> */}
       {/* <ApiFetch/> */}
       {/* <BootStrap/> */}
-      <LoginForm/>
+      {/* <LoginForm/> */}
     </div>
   )
 }
